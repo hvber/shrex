@@ -239,13 +239,13 @@ i.fa-angle-double-down {
 }
 
 .shrek {
-    background-image: url(img/e46.png);
+    background-image: url(img/e46-min.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .fairy {
-    background-image: url(img/shrek2.png);
+    background-image: url(img/shrek2-min.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
