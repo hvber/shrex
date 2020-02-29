@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=K2D:400,700&display=swap');
 
 @font-face {
-    font-family: 'Shrek';
-    src: url('fonts/shrek.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    font-family: "Shrek";
+    src: url("//db.onlinewebfonts.com/t/2179845ee578cd3bb30b55dc922bfb38.eot");
+    src: url("//db.onlinewebfonts.com/t/2179845ee578cd3bb30b55dc922bfb38.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/2179845ee578cd3bb30b55dc922bfb38.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/2179845ee578cd3bb30b55dc922bfb38.woff") format("woff"), url("//db.onlinewebfonts.com/t/2179845ee578cd3bb30b55dc922bfb38.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/2179845ee578cd3bb30b55dc922bfb38.svg#Shrek") format("svg");
 }
 
 * {
@@ -34,7 +33,7 @@ body {
 }
 
 .vh {
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
 }
 
@@ -48,13 +47,13 @@ a {
 }
 
 img,
-.wrld {
+.wrld,
+video {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
 }
-
 
 header {
     position: -webkit-sticky;
@@ -236,6 +235,7 @@ i.fa-angle-double-down {
     margin: auto 0;
     height: 80%;
     width: 100%;
+    background-position: 50% 50%;
 }
 
 .shrek {
@@ -373,6 +373,21 @@ footer {
     height: 100px;
     background: black;
     text-align: center;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+audio {
+    width: 400px;
+    background: white;
+    border-radius: 5px;
 }
 
 footer span {
@@ -389,7 +404,7 @@ footer span {
 }
 
 form {
-    margin: 0 auto;
+    margin: 20px auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -410,7 +425,7 @@ form {
 
     color: black;
     font-weight: bold;
-
+    padding: 30px 0;
 }
 
 .input {
@@ -453,6 +468,7 @@ label {
 
 button {
     outline: none;
+    white-space: nowrap;
     border: 3px solid black;
     border-radius: 5px;
     margin: 10px 0;
@@ -509,6 +525,7 @@ button:hover {
 .meme-title {
     text-transform: uppercase;
     font-weight: bold;
+    white-space: nowrap;
 }
 
 .meme-grade button {
@@ -517,23 +534,48 @@ button:hover {
     color: white;
     border: 0;
     margin: 0 20px;
-}
-
-.meme-grade button:hover {}
-
-.fa-heart.active {
-    color: red;
+    padding: 20px;
+    font-size: 20px;
 }
 
 .meme {
-    width: auto;
-    height: 600px;
+    max-width: 1000px;
+    min-height: 300px;
     margin: 20px auto;
     border-radius: 5px;
     border-top: 3px solid white;
     border-bottom: 3px solid white;
     -webkit-box-shadow: 20px 20px 40px black;
-    box-shadow: 20px 20px 40px black;
+    box-shadow: 20px 20px 40px black,
+        -10px -10px 40px rgba(255, 255, 255, .1);
+}
+
+.notfound,
+.back {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+.back {
+    font-size: 18px;
+}
+
+.ulnf {
+    display: block;
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    font-size: 18px;
+}
+.flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 @media screen and (max-width: 800px) {
@@ -541,6 +583,10 @@ button:hover {
     .vh,
     .vh2 {
         height: auto;
+    }
+
+    .mobile-vh {
+        min-height: 100vh;
     }
 
     nav,
@@ -740,7 +786,7 @@ button:hover {
     }
 
     .shrek5 {
-        height: 85vh;
+        height: 100vh;
     }
 
     .shrigga {
@@ -759,4 +805,67 @@ button:hover {
         transform: translateY(-30vh);
     }
 
+    form {
+        width: 90%;
+    }
+
+    .input {
+        width: 90%;
+    }
+
+    input {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    label {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .elder {
+        font-size: 24px;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .meme-title {
+        font-size: 14px;
+    }
+
+    .meme-grade {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .meme {
+        max-width: 90%;
+        min-height: 0;
+    }
+
+    .meme-desc {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .meme-grade {
+        width: 40%;
+    }
+
+    .meme-grade button {
+        width: 70px;
+        font-size: 14px;
+        margin: 0 10px;
+    }
+
+    .bg-color {
+        height: 200px;
+    }
+    .flex{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
 }
