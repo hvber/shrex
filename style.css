@@ -546,8 +546,8 @@ button:hover {
     border-top: 3px solid white;
     border-bottom: 3px solid white;
     -webkit-box-shadow: 20px 20px 40px black;
-    box-shadow: 20px 20px 40px black,
-        -10px -10px 40px rgba(255, 255, 255, .1);
+    box-shadow: 10px 10px 30px black,
+        -5px -5px 30px rgba(255, 255, 255, .3);
 }
 
 .notfound,
@@ -569,7 +569,8 @@ button:hover {
     padding: 20px;
     font-size: 18px;
 }
-.flex{
+
+.flex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -862,10 +863,22 @@ button:hover {
     .bg-color {
         height: 200px;
     }
-    .flex{
+
+    .flex {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
+    }
+
+    .notfound,
+    .back,
+    .ulnf {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    .ulnf {
+        width: 100%;
     }
 }
