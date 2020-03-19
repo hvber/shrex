@@ -1,0 +1,64 @@
+*:not(ul) {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+header {
+    background: #e8c84e;
+    height: 50px;
+    font-size: 130%;
+    text-align: center;
+}
+
+.left,
+.right {
+    background: #ffb544;
+    height: 500px;
+    width: 40%;
+    font-size: 130%;
+}
+
+.center {
+    height: 500px;
+    width: 30%;
+    text-align: center;
+}
+
+.right {
+    text-align: center;
+    width: 30%;
+}
+
+footer {
+    background: #e8c84e;
+    height: 50px;
+    text-align: right;
+    padding: 10px;
+}
+
+ul {
+    background: #ffaa00;
+}
+
+ul li {
+    padding-top: 30px;
+}
+
+img,
+h3 {
+    margin-top: 50px;
+}
+
+form {
+    margin-bottom: 100px;
+}
+
+main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+/*https://arkusze.pl/zawodowy/e14-2019-czerwiec-egzamin-zawodowy-praktyczny.pdf*/
