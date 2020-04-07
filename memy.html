@@ -8,8 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="author" content="Sebastian Haber">
     <meta name="keywords" content="shrek, filmy, shrex, shreks, animacje">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" title="Colorful" type="text/css">
+    <link rel="alternate stylesheet" href="alternate-css.css" title="BlackAndWhite" type="text/css">
 
     <title>Shreks | Memuchy</title>
 </head>
@@ -20,22 +20,20 @@
             <div class="hamburger-menu">
                 <ul>
                     <li><a href="index.html">Strona główna</a></li>
-                    <li><a href="not-found.html">Postacie</a></li>
+                    <li><a href="#">Postacie</a></li>
                     <li><a href="shrexxx.html">Shreks</a></li>
                     <li><a href="memy.html">Memy</a></li>
-                    <li><a href="https://www.netflix.com/pl/title/60020686" target="_blank">Obejrzyj film</a></li>
-                    <li><a href="/zadanie/index.html" target="_blank">ZADANIA</a></li>
+                    <li><a href="#">Obejrzyj film</a></li>
                 </ul>
             </div>
             <div class="logo"><a href="index.html">Shrek</a></div>
             <nav>
                 <ul>
                     <li><a href="index.html">Strona główna</a></li>
-                    <li><a href="not-found.html">Postacie</a></li>
+                    <li><a href="#">Postacie</a></li>
                     <li><a href="shrexxx.html">Shreks</a></li>
                     <li><a href="memy.html">Memy</a></li>
-                    <li><a href="https://www.netflix.com/pl/title/60020686" target="_blank">Obejrzyj film</a></li>
-                    <li><a href="/zadanie/index.html" target="_blank">ZADANIA</a></li>
+                    <li><a href="#">Obejrzyj film</a></li>
                 </ul>
             </nav>
             <div class="hamburger">
@@ -53,72 +51,17 @@
                 <div class="meme-desc">
                     <span class="meme-title">Coronabyte</span>
                     <div class="meme-grade">
-                        <button class="meme-btn" onclick="setColor()"><i class="fa fa-bolt"></i></button>
-                        <button class="meme-btn2" onclick="setColor2()"><i class="fa fa-ban"></i></button>
+                        <button onclick="like()"><i class="fa fa-heart"></i></button>
+                        <button><i class="fa fa-heart"></i></button>
                     </div>
                 </div>
             </div>
-            <div class="memes">
-                <img src="memes/67455584_768350050249279_2253696973754335232_n.jpg" alt="" class="meme">
-                <div class="meme-desc">
-                    <span class="meme-title">kot od tyłu</span>
-                    <div class="meme-grade">
-                        <button class="meme-btn" onclick="setColor()"><i class="fa fa-bolt"></i></button>
-                        <button class="meme-btn2" onclick="setColor2()"><i class="fa fa-ban"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="memes">
-                <img src="memes/bed.jpg" alt="" class="meme">
-                <div class="meme-desc">
-                    <span class="meme-title">ogur</span>
-                    <div class="meme-grade">
-                        <button class="meme-btn" onclick="setColor()"><i class="fa fa-bolt"></i></button>
-                        <button class="meme-btn2" onclick="setColor2()"><i class="fa fa-ban"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="memes">
-                <img src="memes/domdziecka.jpg" alt="" class="meme">
-                <div class="meme-desc">
-                    <span class="meme-title">dom dziecka</span>
-                    <div class="meme-grade">
-                        <button class="meme-btn" onclick="setColor()"><i class="fa fa-bolt"></i></button>
-                        <button class="meme-btn2" onclick="setColor2()"><i class="fa fa-ban"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="memes">
-                <img src="memes/religion.jpg" alt="" class="meme">
-                <div class="meme-desc">
-                    <span class="meme-title">wybierz swoją religię</span>
-                    <div class="meme-grade">
-                        <button class="meme-btn" onclick="setColor()"><i class="fa fa-bolt"></i></button>
-                        <button class="meme-btn2" onclick="setColor2()"><i class="fa fa-ban"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="memes">
-                <img src="memes/shrek5.png" alt="" class="meme">
-                <div class="meme-desc">
-                    <span class="meme-title">shrek 5 | coming soon</span>
-                    <div class="meme-grade">
-                        <button class="meme-btn" onclick="setColor()"><i class="fa fa-bolt"></i></button>
-                        <button class="meme-btn2" onclick="setColor2()"><i class="fa fa-ban"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="memes">
-                <video src="memes/video-explosive.mp4" class="meme" controls></video>
-                <div class="meme-desc">
-                    <span class="meme-title">explosive kitty</span>
-                    <div class="meme-grade">
-                        <button class="meme-btn" onclick="setColor()"><i class="fa fa-bolt"></i></button>
-                        <button class="meme-btn2" onclick="setColor2()"><i class="fa fa-ban"></i></button>
-                    </div>
-                </div>
-            </div>
-            
+            <img src="memes/67455584_768350050249279_2253696973754335232_n.jpg" alt="" class="meme">
+            <img src="memes/bed.jpg" alt="" class="meme">
+            <img src="memes/domdziecka.jpg" alt="" class="meme">
+            <img src="memes/religion.jpg" alt="" class="meme">
+            <img src="memes/shrek5.png" alt="" class="meme">
+            <video src="memes/video-explosive.mp4" class="meme" controls></video>
         </div>
     </main>
     <footer>
