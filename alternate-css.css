@@ -23,7 +23,7 @@
 body {
     font-family: 'K2D', sans-serif;
     background-color: var(--background);
-    color: white;
+    color: black;
     overflow-x: hidden;
 }
 
@@ -81,7 +81,7 @@ header .mw {
 .wrld,
 .shrk5 {
     font-family: 'Shrek';
-    color: var(--green);
+    color: black;
 }
 
 .hamburger,
@@ -130,24 +130,16 @@ nav ul {
 
     text-transform: uppercase;
     font-size: 1.5rem;
+    white-space: nowrap;
     margin-left: 20px;
-    width: 600px;
+    width: 800px;
 }
 
 nav ul li a {
     color: white;
     display: block;
     padding: 10px;
-
-    -webkit-transition: color .2s ease-in-out;
-    transition: color .2s ease-in-out;
 }
-
-nav ul li a:hover {
-    color: var(--green);
-}
-
-
 
 .wrld {
     height: 80vh;
@@ -291,7 +283,7 @@ i.fa-angle-double-down {
 }
 
 .fa-star {
-    color: var(--green);
+    color: black;
     font-size: 4rem;
 }
 
@@ -477,7 +469,7 @@ button {
 
 button:hover {
     background: black;
-    color: var(--green2);
+    color: var(--green);
 }
 
 .memes-flex {
